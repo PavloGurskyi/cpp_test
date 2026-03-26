@@ -1,5 +1,7 @@
-#include <iostream>
-#include <windows.h>
+#include <iostream> // для std::cout і std::cin
+#include <locale>   // для setlocale()
+#include <windows.h> // для SetConsoleOutputCP() і SetConsoleCP()
+#include <conio.h> // для _kbhit() і _getch()
 
 
 //? === St 21.03.26 ===
@@ -17,15 +19,32 @@
 //     int number;
 //     std::cin >> number;
 //     std::cout << "You entered: " << number << std::endl;
+//     std::cout << "Press ESC to exit..." << std::endl;
+//     int key = 0;
+//     while (key != 27) { // 27 = код клавіші ESC
+//         if (_kbhit()) {
+//             key = _getch();
+//         }
+//     }
 //     return 0;
 // }
 
 // This program sets the locale to Ukrainian and prints "Hello, World!" in Ukrainian.
-// int main() {
-//     setlocale(LC_ALL, "uk_UA.UTF-8");
-//     std::cout << "Привіт, світ!" << std::endl;
-//     return 0;
-// }
+int main() {
+    setlocale(LC_ALL, "uk_UA.UTF-8");
+    SetConsoleOutputCP(65001);
+    SetConsoleCP(65001);
+    std::cout << "Привіт, світ!" << std::endl;
+    std::cout << std::endl;
+    std::cout << "Press ESC to exit..." << std::endl;
+    int key = 0;
+    while (key != 27) { // 27 = код клавіші ESC
+        if (_kbhit()) {
+            key = _getch();
+        }
+    }
+    return 0;
+}
 
 
 //? === Wd 25.03.26 ===
@@ -109,7 +128,7 @@
 //         return 0;
 //     }
 
-// This program checks if the entered number is even or odd.
+// This program checks if the entered number is even or odd. //!"Press ESC to exit..."
 // int main() {
 //     int num;
 //     std::cout << "Enter number: ";
@@ -119,6 +138,16 @@
 //     } else {
 //         std::cout << "Number " << num << " is odd." << std::endl;
 //     }
+//     std::cout << std::endl;
+//     std::cout << "Press ESC to exit..." << std::endl;
+                                                                                    //!"Press ESC to exit..." 
+//     int key = 0;
+//     while (key != 27) { // 27 = код клавіші ESC
+//         if (_kbhit()) {
+//             key = _getch();
+//         }
+//     }
 //     return 0;
 // }
+
 
