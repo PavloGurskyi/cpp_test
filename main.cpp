@@ -30,21 +30,21 @@
 // }
 
 // This program sets the locale to Ukrainian and prints "Hello, World!" in Ukrainian.
-int main() {
-    setlocale(LC_ALL, "uk_UA.UTF-8");
-    SetConsoleOutputCP(65001);
-    SetConsoleCP(65001);
-    std::cout << "Привіт, світ!" << std::endl;
-    std::cout << std::endl;
-    std::cout << "Press ESC to exit..." << std::endl;
-    int key = 0;
-    while (key != 27) { // 27 = код клавіші ESC
-        if (_kbhit()) {
-            key = _getch();
-        }
-    }
-    return 0;
-}
+// int main() {
+//     setlocale(LC_ALL, "uk_UA.UTF-8");
+//     SetConsoleOutputCP(65001);
+//     SetConsoleCP(65001);
+//     std::cout << "Привіт, світ!" << std::endl;
+//     std::cout << std::endl;
+//     std::cout << "Press ESC to exit..." << std::endl;
+//     int key = 0;
+//     while (key != 27) { // 27 = код клавіші ESC
+//         if (_kbhit()) {
+//             key = _getch();
+//         }
+//     }
+//     return 0;
+// }
 
 
 //? === Wd 25.03.26 ===
@@ -151,3 +151,108 @@ int main() {
 // }
 
 
+//? === Th 26.03.26 ===
+
+
+//! if / else if / else construction.
+// This program checks if the entered number is greater than, less than, or equal to 3, and prints the appropriate message in Ukrainian. It also waits for the user to press the ESC key before exiting.
+// int main(){
+//     setlocale(LC_ALL, "uk_UA.UTF-8");
+//     SetConsoleOutputCP(65001);
+//     SetConsoleCP(65001);
+//     int num;
+// std::cout << "Введіть число: ";
+// std::cin >> num;
+// if(num > 3) {
+//     std::cout << "Число " << num << " є більшим." << std::endl;
+// } else if (num < 3) {
+//     std::cout << "Число " << num << " є меншим." << std::endl;
+// } else if (num == 3) {
+//     std::cout << "Це і є число 3." << std::endl;
+// } else {
+//     std::cout << "Це не число." << std::endl;}
+//     std::cout << std::endl;
+//         std::cout << "Press ESC to exit..." << std::endl;
+//     int key = 0;
+//     while (key != 27) { // 27 = код клавіші ESC
+//         if (_kbhit()) {
+//             key = _getch();
+//         }
+//     }
+// return 0;
+// }
+
+//! if / else if / else construction with checking for number 13.
+// int main(){
+//     setlocale(LC_ALL, "uk_UA.UTF-8");
+//     SetConsoleOutputCP(65001);
+//     SetConsoleCP(65001);
+//     int num;
+// std::cout << "Введіть число: ";
+// std::cin >> num;
+// if(num == 13) {
+//     std::cout << "Це — число 13." << std::endl;
+// } else if (num > 3) {
+//     std::cout << "Число " << num << " є більшим." << std::endl;
+// } else if (num < 3) {
+//     std::cout << "Число " << num << " є меншим." << std::endl;
+// } else if (num == 3) {
+//     std::cout << "Це і є число 3." << std::endl;
+// } else {
+//     std::cout << "Це не число." << std::endl;}
+//     std::cout << std::endl;
+//         std::cout << "Press ESC to exit..." << std::endl;
+//     int key = 0;
+//     while (key != 27) { // 27 = код клавіші ESC
+//         if (_kbhit()) {
+//             key = _getch();
+//         }
+//     }
+// return 0;
+// }
+
+//! if / else if / else construction without {} brackets.
+// int main(){
+//     setlocale(LC_ALL, "uk_UA.UTF-8");
+//     SetConsoleOutputCP(65001);
+//     SetConsoleCP(65001);
+//     int num;
+// std::cout << "Введіть число: ";
+// std::cin >> num;
+// if(num == 1)
+//     std::cout << "Це — число 1." << std::endl;
+// else if(num == 2)
+// std::cout << "Це — число 2." << std::endl;
+// else if (num == 3)
+// std::cout << "Це — число 3." << std::endl;
+// else 
+// std::cout << "Це не число 1, 2 або 3." << std::endl;
+//     std::cout << std::endl;
+//         std::cout << "Press ESC to exit..." << std::endl;
+//     int key = 0;
+//     while (key != 27) { // 27 = код клавіші ESC
+//         if (_kbhit()) {
+//             key = _getch();
+//         }
+//     }
+// return 0;
+// }
+
+int main() {
+    setlocale(LC_ALL, "uk_UA.UTF-8");
+    SetConsoleOutputCP(65001);
+    SetConsoleCP(65001);
+    int num;
+    
+
+    
+        std::cout << std::endl;
+        std::cout << "Press ESC to exit..." << std::endl;
+    int key = 0;
+    while (key != 27) { // 27 = код клавіші ESC
+        if (_kbhit()) {
+            key = _getch();
+        }
+    }
+return 0;
+}
