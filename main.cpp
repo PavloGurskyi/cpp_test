@@ -238,21 +238,32 @@
 // return 0;
 // }
 
-int main() {
-    setlocale(LC_ALL, "uk_UA.UTF-8");
-    SetConsoleOutputCP(65001);
-    SetConsoleCP(65001);
-    int num;
-    
+//! switch construction.
+// int main() {
+//     setlocale(LC_ALL, "uk_UA.UTF-8");
+//     SetConsoleOutputCP(65001);
+//     SetConsoleCP(65001);
+//     int num;
+//     std::cin >> num;
+//     switch (num) {
+//         case 5:
+//             std::cout << "Is 5.";
+//         break;
+//         case 10:
+//             std::cout << "Is 10.";
+//         break;
+//         default:
+//             std::cout << "Is not.";
+//         break;
+//     }
+//         std::cout << std::endl;
+//         std::cout << "Press ESC to exit..." << std::endl;
+//     int key = 0;
+//     while (key != 27) { // 27 = код клавіші ESC
+//         if (_kbhit()) {
+//             key = _getch();
+//         }
+//     }
+// return 0;
+// }
 
-    
-        std::cout << std::endl;
-        std::cout << "Press ESC to exit..." << std::endl;
-    int key = 0;
-    while (key != 27) { // 27 = код клавіші ESC
-        if (_kbhit()) {
-            key = _getch();
-        }
-    }
-return 0;
-}
