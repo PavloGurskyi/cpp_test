@@ -412,3 +412,72 @@ using namespace std;
     return 0;
 }*/
 
+//todo Randomize number from 1 to 20.
+/*int main () {
+    srand(time(0));
+    int a = 1 + rand() % 20;
+    cout << a << endl;
+    return 0;
+}*/
+
+//! ============================== Homework ==============================
+
+//todo Simple calculator using switch construction.
+/*int main() {
+setlocale(LC_ALL, "uk_UA.UTF-8");
+SetConsoleOutputCP(65001);
+SetConsoleCP(65001);
+int num;
+float num1, num2;
+char sym;
+cout << "Введіть перше число: ";
+cin >> num1;
+cout << "Оберіть дію (+, -, *, /): ";
+cin >> sym;
+cout << "Введіть друге число: ";
+cin >> num2;
+cout << endl;
+switch (sym) {
+    case '+':
+        cout << "Результат: " << num1 + num2 << endl;
+        break;
+    case '-':
+        cout << "Результат: " << num1 - num2 << endl;
+        break;
+    case '*':
+        cout << "Результат: " << num1 * num2 << endl;
+        break;
+    case '/':
+        if (num2 != 0) {
+            cout << "Результат: " << num1 / num2 << endl;
+        } else {
+            cout << "Помилка: ділення на нуль!" << endl;
+        }
+        break;
+    default:
+        cout << "Невірна операція!" << endl;
+        break;
+}
+}*/
+
+//! Simple randomizer from 1 to 100.
+#include <cstdlib>
+#include <ctime>
+/*int main () {
+    srand(time(0));
+    int num = 1 + rand() % 100;
+    cout << num << endl;
+    return 0;
+}*/
+
+//? Better randomizer from 1 to 100 using <random> library.
+#include <random>
+/*int main() {
+    random_device rd; // отримує випадкове число від апаратного забезпечення
+    mt19937 gen(rd()); // ініціалізує генератор випадкових чисел
+    uniform_int_distribution<> dis(1, 100); // визначає діапазон випадкових чисел
+    int num = dis(gen); // генерує випадкове число в діапазоні від 1 до 100
+    cout << num << endl;
+    return 0;
+}*/
+
