@@ -7,7 +7,7 @@
 //? === St 21.03.26 ===
 
 
-// This is a simple C++ program that prints "Hello World!" to the console.
+// This is a simple C++ program that prints //!"Hello World!" to the console.
 // int main() {
 //     std::cout << "Hello World!" << std::endl;
 //     return 0;
@@ -29,7 +29,7 @@
 //     return 0;
 // }
 
-// This program sets the locale to Ukrainian and prints "Hello, World!" in Ukrainian.
+// This program sets the locale to Ukrainian and prints "Hello, World!" in //! Ukrainian.
 // int main() {
 //     setlocale(LC_ALL, "uk_UA.UTF-8");
 //     SetConsoleOutputCP(65001);
@@ -68,7 +68,7 @@
 //     return 0;
 // }
 
-// Types of variables.
+//! Types of variables.
 // int main() {
 //     short numShort = 2;
 //     int numInt = 4;
@@ -90,10 +90,10 @@
 //     return 0;
 // }
 
-// Char variable.
+//! Char variable.
 // char sym = '+';
 
-// Boolean variables.
+//! Boolean variables.
 // bool isTrue = true;
 // bool isFalse = false;
 
@@ -112,7 +112,7 @@
 //     return 0;
 // }
 
-// Autocheck for positive or negative number.
+//todo Autocheck for positive or negative number.
 // int main() {
 //     int num;
 //     std::cout << "Enter number: ";
@@ -128,7 +128,9 @@
 //         return 0;
 //     }
 
-// This program checks if the entered number is even or odd. //!"Press ESC to exit..."
+//todo This program checks if the entered number is even or odd.
+
+//!"Press ESC to exit..."
 // int main() {
 //     int num;
 //     std::cout << "Enter number: ";
@@ -238,7 +240,7 @@
 // return 0;
 // }
 
-//! switch construction.
+//todo switch construction.
 // int main() {
 //     setlocale(LC_ALL, "uk_UA.UTF-8");
 //     SetConsoleOutputCP(65001);
@@ -386,7 +388,7 @@ std::cout << std::endl;
     return 0;
     */
 
-//! Modulo operation.
+//! Modulo operation (rest of dividing)
 /*int main() {
     int a, b, z;
     std::cin >> a >> b;
