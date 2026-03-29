@@ -4,6 +4,7 @@
 #include <conio.h> // для \_kbhit() і \_getch()
 #include <cstdlib> // бібліотека стандартних утиліт
 #include <ctime> // підключає роботу з часом
+#include <time.h> // підключає роботу з часом
 #include <random> // сучасні генератори випадкових чисел у C++
 
 using namespace std; // using namespace std;

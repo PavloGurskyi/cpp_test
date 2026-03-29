@@ -483,3 +483,23 @@ switch (sym) {
     return 0;
 }*/
 
+
+//? === Mo 30.03.26 ===
+
+
+//! ============================== for / while / do_while ==============================
+
+// This program uses a for loop to print "Hello, World!" five times.
+// int main() {
+//     for (int i = 0; i < 5; i++) {
+//         cout << "Hello, World!" << endl;
+//     }
+//     return 0;
+// }
+
+int main(){
+    for (int i = 0; i < 10; i++){
+        cout << "Item " << i+1 << endl;
+    }
+    return 0;
+}
