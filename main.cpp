@@ -267,3 +267,148 @@
 // return 0;
 // }
 
+
+//? === Su 29.03.26 ===
+
+
+//todo Simple calculator using switch construction.
+/*int main() {
+setlocale(LC_ALL, "uk_UA.UTF-8");
+SetConsoleOutputCP(65001);
+SetConsoleCP(65001);
+int num;
+float num1, num2;
+char sym;
+std::cout << "Введіть перше число: ";
+std::cin >> num1;
+std::cout << "Оберіть дію (+, -, *, /): ";
+std::cin >> sym;
+std::cout << "Введіть друге число: ";
+std::cin >> num2;
+std::cout << std::endl;
+switch (sym) {
+    case '+':
+        std::cout << "Результат: " << num1 + num2 << std::endl;
+        break;
+    case '-':
+        std::cout << "Результат: " << num1 - num2 << std::endl;
+        break;
+    case '*':
+        std::cout << "Результат: " << num1 * num2 << std::endl;
+        break;
+    case '/':
+        if (num2 != 0) {
+            std::cout << "Результат: " << num1 / num2 << std::endl;
+        } else {
+            std::cout << "Помилка: ділення на нуль!" << std::endl;
+        }
+        break;
+    default:
+        std::cout << "Невірна операція!" << std::endl;
+        break;
+}
+std::cout << std::endl;
+std::cout << std::endl;
+std::cout << "Press ESC to exit..." << std::endl;
+int key = 0;
+while (key != 27)
+{ // 27 = код клавіші ESC
+    if (_kbhit())
+    {
+        key = _getch();
+    }
+    }
+return 0;
+}*/
+
+//todo Simple calculator using if / else if / else construction.
+/*int main() {
+setlocale(LC_ALL, "uk_UA.UTF-8");
+SetConsoleOutputCP(65001);
+SetConsoleCP(65001);
+int num;
+float num1, num2;
+char sym;
+std::cout << "Enter first number: ";
+std::cin >> num1;
+std::cout << "Choose operation (+, -, *, /): ";
+std::cin >> sym;
+std::cout << "Enter second number: ";
+std::cin >> num2;
+std::cout << std::endl;
+if (sym == '+') {
+    std::cout << "Result is: " << num1 + num2 << std::endl;
+} else if (sym == '-') {
+    std::cout << "Result is: " << num1 - num2 << std::endl;
+} else if (sym == '*') {
+    std::cout << "Result is: " << num1 * num2 << std::endl;
+} else if (sym == '/') {
+    if (num2 != 0) {
+        std::cout << "Result is: " << num1 / num2 << std::endl;
+    } else {
+        std::cout << "Error: Division by zero!" << std::endl;
+    }
+} else {
+    std::cout << "Invalid operation!" << std::endl;
+}
+        std::cout << std::endl;
+        std::cout << std::endl;
+        std::cout << "Press ESC to exit..." << std::endl;
+    int key = 0;
+    while (key != 27) { // 27 = код клавіші ESC
+        if (_kbhit()) {
+            key = _getch();
+        }
+    }
+return 0;
+}*/
+
+//todo Simple calc #2 without text.
+/*int main() {
+    float num1, num2, res;
+    char sym;
+        std::cin >> num1;
+    std::cin >> sym;
+    std::cin >> num2;
+    if (sym == '+') {
+        res = num1 + num2;
+    } else if (sym == '-') {
+        res = num1 - num2;
+    } else if (sym == '*') {
+        res = num1 * num2;
+    } else if (sym == '/') {
+        res = num1 / num2;
+    } else {
+        std::cout << "Error" << std::endl;
+    }
+std::cout << std::endl;
+    std::cout << "Equals: " << res << std::endl;
+    return 0;
+    */
+
+//! Modulo operation.
+/*int main() {
+    int a, b, z;
+    std::cin >> a >> b;
+    z = a % b;
+    std::cout << z << std::endl;
+    return 0;
+}*/
+
+//? a = a + 1; a += 1; a++; ++a;
+
+
+//! ============================== using namespace std; ==============================
+
+
+using namespace std;
+
+//todo Start using namespace std; and rewrite the first simple calculator without std:: prefix.
+/*int main() {
+    int a, b, c;
+    cin >> a >> b;
+    c = a + b;
+    cout << c << endl;
+    return 0;
+}*/
+
