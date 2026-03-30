@@ -489,7 +489,7 @@ switch (sym) {
 
 //! ============================== for / while / do_while ==============================
 
-// This program uses a for loop to print "Hello, World!" five times.
+//? This program uses a for loop to print "Hello, World!" five times.
 // int main() {
 //     for (int i = 0; i < 5; i++) {
 //         cout << "Hello, World!" << endl;
@@ -497,9 +497,73 @@ switch (sym) {
 //     return 0;
 // }
 
-int main(){
+//? This program uses a while loop to print the numbers from 1 to 5.
+/*int main() {
+    int i = 1;
+    while (i <= 5) {
+        cout << i << endl;
+        i++;
+    }
+    return 0;
+}*/
+
+//? This program uses a do-while loop to print the numbers from 1 to 5.
+/*int main() {
+    int i = 1;
+    do {
+        cout << i << endl;
+        i++;
+    } while (i <= 5);
+    return 0;
+}*/
+
+//! This program uses a for loop to print the items from 1 to 10.
+/*int main(){
     for (int i = 0; i < 10; i++){
         cout << "Item " << i+1 << endl;
     }
     return 0;
-}
+}*/
+
+//todo This program uses a for loop to print the elements from 1 to 5.
+/*int main(){
+    int i = 1;
+    for(i; i<6; i++) {
+        cout << "Element " << i << endl;
+    }
+    return 0;
+}*/
+
+//todo This program uses a for loop to print the numbers from 100 to 10, decreasing by 15 each time.
+/*int main(){
+    cout << "Let`s start!" << endl;
+    cin.get();
+    cout << endl;
+    for(int i = 100; i>=10; i -= 15){
+        cout << i << endl;
+    } 
+    cout << endl;l    cout << endl;
+    cout << "Press Enter to exit" << endl;
+    cin.get();
+    return 0;
+}*/
+
+//! While loop
+/*int main(){
+    float j = 150;
+    while(j > 20) {
+        cout << "El " << j << endl;
+        j /= 1.5f;
+    }
+    return 0;
+}*/
+
+//! do while loop with WRONG condition
+/*int main(){
+    int k = 100;
+    do{
+        cout << k << endl;
+        k -= 10;
+    } while (k < 10);
+    return 0;
+}*/
