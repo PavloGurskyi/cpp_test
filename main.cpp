@@ -567,3 +567,41 @@ switch (sym) {
     } while (k < 10);
     return 0;
 }*/
+
+//? sizeof operator
+/*int main(){
+    int k = 100;
+    cout << sizeof(k) << endl;
+    return 0;
+}*/
+
+//? Backslash for double quotes and new line.
+/*int main(){
+    cout << "\"Hello!\"\n";
+    return 0;
+}*/
+
+//todo Size of string.
+/*int main(){
+    cout << sizeof("Hi") << endl;
+    return 0;
+}*/
+
+#include <fstream> // для роботи з файлами
+
+//! ============================== File I/O to file "text.txt" ==============================
+/*int main() {
+    std::ofstream file("text.txt", std::ios::app);
+    file << "Hello, World!" << std::endl;
+    file.close();
+    return 0;
+}*/
+
+//todo Add some text to append of existing file.
+/*int main(){
+    std::ofstream file("text.txt", std::ios::app);
+    file << "Some text added" << std::endl;
+    file.close();
+    return 0;
+}*/
+

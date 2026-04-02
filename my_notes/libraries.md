@@ -7,4 +7,6 @@
 #include <time.h> // підключає роботу з часом
 #include <random> // сучасні генератори випадкових чисел у C++
 
+#include <fstream> // для роботи з файлами
+
 using namespace std; // using namespace std;
